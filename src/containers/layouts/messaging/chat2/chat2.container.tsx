@@ -202,6 +202,6 @@ export class Chat2Container extends React.Component {
 
     return (
       <View />
-    )
+    );
   }
 }

@@ -193,11 +193,11 @@ import { View } from 'react-native';
 //   }
 // }
 
-export class Chat3Container extends React.Component{
+export class Chat3Container extends React.Component {
   render() {
 
     return (
       <View />
-    )
+    );
   }
 }

@@ -272,7 +272,7 @@ class Chat2Component extends React.Component {
 
     return (
       <View />
-    )
+    );
   }
 
 }

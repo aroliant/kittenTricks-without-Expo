@@ -32,7 +32,7 @@ export class ApplicationLoader extends React.Component<Props, State> {
 
   constructor(props: Props) {
     super(props);
-    //SplashScreen.preventAutoHide();
+    // SplashScreen.preventAutoHide();
   }
 
   public state: State = {
@@ -41,7 +41,7 @@ export class ApplicationLoader extends React.Component<Props, State> {
 
   private onLoadSuccess = () => {
     this.setState({ loaded: true });
-    //SplashScreen.hide();
+    // SplashScreen.hide();
   };
 
   private onLoadError = (error: Error) => {
@@ -68,12 +68,12 @@ export class ApplicationLoader extends React.Component<Props, State> {
     const { fonts, images } = assets;
 
     // @ts-ignore (expo type error)
-    
-    let self = this
+
+    const self = this;
 
     setTimeout(() => {
       self.onLoadSuccess();
-    },1000)
+    }, 1000);
 
     return new Promise((resolve, reject) => resolve());
   }
