@@ -12,7 +12,6 @@ import {
   withStyles,
 } from '@kitten/theme';
 import { ThemeKey } from '@src/core/themes';
-import Constants from 'expo-constants';
 
 interface ComponentProps {
   currentTheme: ThemeKey;
@@ -51,7 +50,7 @@ export const DynamicStatusBar = withStyles(DynamicStatusBarComponent, (theme: Th
   container: {
     backgroundColor: theme['background-basic-color-1'],
     height: Platform.select({
-      ios: Constants.statusBarHeight,
+      ios: 0, // TODO : Status bar height
       android: 0,
     }),
   },
