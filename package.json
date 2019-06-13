@@ -3,9 +3,8 @@
   "version": "2.0.0",
   "private": true,
   "author": "akveo",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "start:dev": "npm run env:set -- dev && npm start -- -c",
     "start:prod": "npm run env:set -- prod && npm start -- -c",
     "env:set": "./scripts/environment/set-env.sh",
@@ -15,18 +14,19 @@
     "lint:fix": "npm run lint -- --fix",
     "ci:install": "npm ci",
     "ci:lint": "npm run lint",
-    "ci:build": "npm run env:set -- prod && npm run build"
+    "ci:build": "npm run env:set -- prod && npm run build",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android"
   },
   "dependencies": {
     "@eva-design/eva": "1.0.0",
-    "expo": "^33.0.4",
     "expo-analytics": "^1.0.8",
     "expo-camera": "^5.0.1",
     "expo-constants": "^5.0.1",
     "expo-media-library": "^5.0.1",
     "expo-permissions": "^5.0.1",
     "react": "^16.8.3",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native": "0.59.8",
     "react-native-keyboard-aware-scroll-view": "^0.8.0",
     "react-native-ui-kitten": "^4.0.0",
     "react-navigation": "^3.11.0"
@@ -39,6 +39,7 @@
     "@types/react-navigation": "^3.0.7",
     "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-module-resolver": "^3.2.0",
+    "babel-preset-expo": "^5.2.0",
     "husky": "^1.1.2",
     "rimraf": "^2.6.2",
     "tslint": "^5.12.1",

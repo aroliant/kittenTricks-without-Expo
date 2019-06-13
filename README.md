@@ -1,4 +1,8 @@
-# Kitten Tricks [<img src="https://i.imgur.com/oMcxwZ0.png" alt="Eva Design System" height="20px" />][link:eva] [![Build Status][badge:travis]][link:travis]
+# Kitten Tricks in pure React Native
+
+Pure React Native version of - https://github.com/akveo/kittenTricks . We found its hard to eject an app from Expo so, we made this one.
+
+----------------------------------------------------
 
 This perfect starter kit is an app based on React Native and [**UI Kitten library**][link:ui-kitten] with Light and Dark themes support. It’s completely free and Open Source. 
 Compose the application from available screens, add backend integration and you will end up with A-grade cross-platform mobile application.
